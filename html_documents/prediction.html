@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang=“en”>
+   <head>
+        <title> Prediction </title>
+    </head>
+    
+    <body>      
+            <h1>
+                {% if name %}
+                    Hello, {{name}}!
+                {% else %}
+                    Hi, there!
+                {% endif %}
+            </h1> 
+            
+            <h2>Make Prediction About a Cluster</h2>  
+                <br>
+                <form method="POST" action="/predicted" id=pform>
+                    <h4>All should be numbers fx</h4>
+                    <p>[16000,  2014, 35786,   139,    30,   821]</p>
+                    <div>
+                      Enter x1 <input type="number" name="x1"> <br>
+                      Enter x2 <input type="number" name="x2"> <br>
+                      Enter x3 <input type="number" name="x3"> <br>
+                      Enter x4 <input type="number" name="x4"> <br>
+                      Enter x5 <input type="number" name="x5"> <br>
+                      Enter x6 <input type="number" name="x6"> <br>
+                      <input type="submit" name="submit" value="Submit">
+                    </div>
+                </form>
+            </h2>
+    </body>
+</html>
